@@ -17,7 +17,7 @@ const [is_capital, setIs_Capital] = useState(false);
 async function handleSubmit(e) {
 e.preventDefault();
 try {
-await axios.post(`${API}/cities/new`, {
+await axios.post(`${API}/cities`, {
 name: name,
 image: image,
 population: population,
@@ -105,10 +105,8 @@ onChange={(e) => setCurrency(e.target.value)}
 />
 </div>
 <div>
-<label className="px-5 mt-4 fs-5 fw-bold">Is_Capital</label>
+<label className="px-5 mt-4 fs-5 fw-bold">Capital</label>
 <input
-style={{ width: "50%" }}
-className="form-control form-control-lg"
 type="checkbox"
 aria-label=".form-control-lg example"
 checked={is_capital}
