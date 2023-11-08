@@ -129,10 +129,10 @@ onChange={(e) => setCurrency(e.target.value)}
 <input
 style={{ width: "50%" }}
 className="form-control form-control-lg"
-type="boolean"
+type="checkbox"
 aria-label=".form-control-lg example"
-value={is_capital}
-onChange={(e) => setIs_Capital(e.target.value)}
+checked={is_capital}
+onChange={(e) => setIs_Capital(e.target.checked)}
 />
 </div>
 <button type="submit" 
