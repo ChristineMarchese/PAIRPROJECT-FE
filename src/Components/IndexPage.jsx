@@ -43,7 +43,7 @@ src={item.image}
 alt={item.name}
 />
 <div className="card-body fs-2 text-center text-secondary">
-<p className="card-text">{item.annual_visitors} Millions</p>
+<p className="card-text">{item.annual_visitors} Million</p>
 </div>
 </div>
 );

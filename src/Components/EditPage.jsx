@@ -47,10 +47,14 @@ annual_visitors: annual_visitors,
 currency: currency,
 is_capital: is_capital,
 });
-navigate("/cities");
+
 } catch (error) {
 console.log(error);
 }
+}
+
+function clickHere() {
+  navigate("/cities");
 }
 
 return (
@@ -125,17 +129,15 @@ onChange={(e) => setCurrency(e.target.value)}
 />
 </div>
 <div>
-<label className="px-5 mt-4 fs-5 fw-bold">Is_Capital</label>
+<label className="px-5 mt-4 fs-5 fw-bold">Capital</label>
 <input
-style={{ width: "50%" }}
-className="form-control form-control-lg"
 type="checkbox"
 aria-label=".form-control-lg example"
 checked={is_capital}
 onChange={(e) => setIs_Capital(e.target.checked)}
 />
 </div>
-<button type="submit" 
+<button onClick={clickHere}type="submit" 
 className="btn btn-secondary px-5 me-5 mt-5 mb-5"
 >
 Submit
