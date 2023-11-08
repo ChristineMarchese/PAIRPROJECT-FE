@@ -1,7 +1,10 @@
+import IndexPage from "./IndexPage";
+
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+     
+    <IndexPage />
   )
 }
 
