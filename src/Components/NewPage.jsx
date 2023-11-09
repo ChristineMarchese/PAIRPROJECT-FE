@@ -37,10 +37,10 @@ return (
 <>
   <h2 className="mt-3 px-5">New</h2>
   <div className="m-5 px-5" style={{border: "1px solid grey"}}>
-  <form onSubmit={handleSubmit}>
+<form onSubmit={handleSubmit}>
  <div>
-  <label className="px-5 mt-5 fs-5 fw-bold">Name</label>
-  <input
+   <label className="px-5 mt-5 fs-5 fw-bold">Name</label>
+   <input
    style={{ width: "50%" }}
    className="form-control form-control-lg"
    type="text"
@@ -52,71 +52,71 @@ return (
   <div>
    <label className="px-5 mt-4 fs-5 fw-bold">Image</label>
 <input
-style={{ width: "50%" }}
-className="form-control form-control-lg"
-type="text"
-aria-label=".form-control-lg example"
-value={image}
-onChange={(e) => setImage(e.target.value)}
+  style={{ width: "50%" }}
+  className="form-control form-control-lg"
+  type="text"
+  aria-label=".form-control-lg example"
+  value={image}
+  onChange={(e) => setImage(e.target.value)}
 />
 </div>
-<div>
-<label className="px-5 mt-4 fs-5 fw-bold">Population</label>
-<input
-style={{ width: "50%" }}
-className="form-control form-control-lg"
-type="number"
-aria-label=".form-control-lg example"
-value={population}
-onChange={(e) => setPopulation(e.target.value)}
+  <div>
+   <label className="px-5 mt-4 fs-5 fw-bold">Population</label>
+  <input
+   style={{ width: "50%" }}
+   className="form-control form-control-lg"
+   type="number"
+   aria-label=".form-control-lg example"
+   value={population}
+   onChange={(e) => setPopulation(e.target.value)}
 />
 </div>
-<div>
-<label className="px-5 mt-4 fs-5 fw-bold">Area</label>
-<input
-style={{ width: "50%" }}
-className="form-control form-control-lg"
-type="number"
-aria-label=".form-control-lg example"
-value={area}
-onChange={(e) => setArea(e.target.value)}
-/>
+  <div>
+   <label className="px-5 mt-4 fs-5 fw-bold">Area</label>
+   <input
+    style={{ width: "50%" }}
+    className="form-control form-control-lg"
+    type="number"
+    aria-label=".form-control-lg example"
+    value={area}
+   onChange={(e) => setArea(e.target.value)}
+ />
+  </div>
+   <div>
+    <label className="px-5 mt-4 fs-5 fw-bold">Annual Visitors</label>
+    <input
+     style={{ width: "50%" }}
+     className="form-control form-control-lg"
+     type="number"
+     aria-label=".form-control-lg example"
+     value={annual_visitors}
+     onChange={(e) => setAnnual_Visitors(e.target.value)}
+  />
 </div>
-<div>
-<label className="px-5 mt-4 fs-5 fw-bold">Annual Visitors</label>
-<input
-style={{ width: "50%" }}
-className="form-control form-control-lg"
-type="number"
-aria-label=".form-control-lg example"
-value={annual_visitors}
-onChange={(e) => setAnnual_Visitors(e.target.value)}
-/>
-</div>
-<div>
-<label className="px-5 mt-4 fs-5 fw-bold">Currency</label>
-<input
-style={{ width: "50%" }}
-className="form-control form-control-lg"
-type="text"
-aria-label=".form-control-lg example"
-value={currency}
-onChange={(e) => setCurrency(e.target.value)}
-/>
-</div>
-<div>
-<label className="px-5 mt-4 fs-5 fw-bold">Capital</label>
-<input
-type="checkbox"
-aria-label=".form-control-lg example"
-checked={is_capital}
-onChange={(e) => setIs_Capital(e.target.checked)}
-/>
-</div>
-<button type="submit" className="btn btn-secondary px-5 me-5 mt-5 mb-5">
-Submit
-</button>
-</form>
+  <div>
+   <label className="px-5 mt-4 fs-5 fw-bold">Currency</label>
+   <input
+    style={{ width: "50%" }}
+    className="form-control form-control-lg"
+    type="text"
+    aria-label=".form-control-lg example"
+    value={currency}
+    onChange={(e) => setCurrency(e.target.value)}
+  />
+  </div>
+   <div>
+    <label className="px-5 mt-4 fs-5 fw-bold">Capital</label>
+    <input
+     type="checkbox"
+     aria-label=".form-control-lg example"
+     checked={is_capital}
+     onChange={(e) => setIs_Capital(e.target.checked)}
+  />
+   </div>
+   <button type="submit" className="btn btn-secondary px-5 me-5 mt-5 mb-5">
+   Submit
+  </button>
+  </form>
 </div>
 </>
 );

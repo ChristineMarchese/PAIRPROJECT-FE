@@ -9,6 +9,7 @@ function IndexPage() {
 
 useEffect(() => {
   fetchAllCities();
+// eslint-disable-next-line react-hooks/exhaustive-deps
 }, []);
 
 async function fetchAllCities() {
@@ -44,10 +45,10 @@ return (
     </div>
 
    <img
-    className="card-img-top"
-    style={{ height: "500px" }}
-    src={item.image}
-    alt={item.name}
+     className="card-img-top"
+     style={{ height: "500px" }}
+     src={item.image}
+     alt={item.name}
    />
    <div className="card-body fs-2 text-center text-secondary">
      <p className="card-text">{item.annual_visitors} Million Visitors</p>
@@ -55,7 +56,7 @@ return (
    </Link>
   </div>
   );
-  })}
+})}
  </div>
  );
 }
