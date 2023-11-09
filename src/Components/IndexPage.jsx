@@ -22,8 +22,15 @@ async function fetchAllCities() {
 }
 
 return (
-<div style={{ border: "2px solid grey" }}>
-  <h2 className="mt-3 px-5">Index</h2>
+<div className="px-5"
+ style={{ 
+    border: "2px solid grey", 
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    justifyContent: "space-evenly",
+    margin: "5px",
+   }}
+  >
   {allcities.map((item) => {
    return (
     <div
@@ -43,12 +50,12 @@ return (
     alt={item.name}
    />
    <div className="card-body fs-2 text-center text-secondary">
-     <p className="card-text">{item.annual_visitors} Million</p>
+     <p className="card-text">{item.annual_visitors} Million Visitors</p>
     </div>
    </Link>
   </div>
- );
- })}
+  );
+  })}
  </div>
  );
 }

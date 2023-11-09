@@ -2,12 +2,12 @@
 
  function PageNotFound() {
   return (
-    <div> 
+    <div style={{ border: "2px solid grey"}}> 
       <h2
        className="d-flex justify-content-center m-5"
-       style={{fontsize: "200px", color: "red" }}
+       style={{fontSize: "100px", color: "red" }}
       >
-       PageNotFound!
+       Page Not Found!
       </h2>
     </div>
   );
